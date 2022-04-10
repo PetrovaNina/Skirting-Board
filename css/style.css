@@ -419,11 +419,11 @@ a {
 	overflow: hidden;
 	height: 30px;
 	width: 65px;
-	padding: 6px 10px 3px 18px;
-	top: 30px;
-	right: 0;
-	font-size: 21px;
-	line-height: 1;
+	text-align: center;
+  top: 30px;
+  right: 0;
+  font-size: 21px;
+  line-height: 1.4;
 	letter-spacing: .025em;
 	font-family: 'Oswald', sans-serif, helvetica, ribbon-condensed, standard-block;
 	font-style: normal;
