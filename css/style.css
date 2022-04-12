@@ -15,6 +15,7 @@ body {
 
 main {
 	flex-grow: 2;
+	margin-top: 72px;
 }
 
 h1,
@@ -236,7 +237,6 @@ header {
 	position: absolute;
 	top: 0;
 	height: 100%;
-	padding-top: 70px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -762,6 +762,10 @@ footer.section {
 }
 
 @media (min-width: 1200px) {
+	main {
+		margin-top: 90px;
+	}
+
 	.section {
 		padding-bottom: 60px;
 	}
@@ -769,8 +773,8 @@ footer.section {
 	/* #slider, */
 	.slide__item,
 	.slick-slide {
-		height: 640px;
-		max-height: 640px;
+		height: 550px;
+		max-height: 550px;
 	}
 
 	.slider__item__caption {
@@ -783,7 +787,7 @@ footer.section {
 	}
 
 	.nav-link {
-		padding: 35px 28px;
+		padding: 36px 28px;
 	}
 
 
