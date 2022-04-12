@@ -236,7 +236,6 @@ header {
 	position: absolute;
 	top: 0;
 	height: 100%;
-	max-width: 80%;
 	padding-top: 70px;
 	display: flex;
 	justify-content: center;
@@ -909,11 +908,6 @@ footer.section {
 		display: none;
 	}
 
-	#slider,
-	.slick-track {
-		height: 430px;
-	}
-
 	.slider__item__caption {
 		max-width: 70%;
 		padding-left: 0;
@@ -933,6 +927,9 @@ footer.section {
 }
 
 @media (max-width:575px) {
+	.slider__item__caption {
+		max-width: 80%;
+	}
 
 	.categories-list,
 	.projects-list {
