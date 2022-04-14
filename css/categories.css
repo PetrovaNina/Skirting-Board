@@ -1,0 +1,123 @@
+.categories-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 15px;
+}
+
+.categories-item__image-wrap {
+  max-width: 100%;
+  min-width: 50%;
+  overflow: hidden;
+}
+
+.categories-item__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.categories-item__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: justify;
+  max-width: 510px;
+}
+
+.categories-item__description {
+  display: -webkit-box;
+  /* for text no longer than 4 lines */
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.categories-item__prise {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: .05em;
+	font-family: 'Oswald', sans-serif, helvetica, ribbon-condensed, standard-block;
+  color: #976f55;
+}
+
+.categories-item__buttons {
+  display: flex;
+  gap: 30px;
+}
+
+
+@media (min-width: 900px) {
+  .categories-item__image-wrap {
+    flex: 1 0 40%;
+    max-width: 40%;
+    min-width: 40%;
+    overflow: hidden;
+    max-height: 360px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .container.categories-container {
+    padding: 0px 30px;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .categories-item__image-wrap {
+    max-height: 350px;
+  }
+
+  .categories-item__caption {
+    align-items: center;
+  }
+
+  .categories-item__buttons {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+    width: min-content;
+  }
+
+  .categories-item__link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container.categories-container {
+    padding: 0px 15px;
+    max-width: 100%;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  .categories-item {
+    flex-direction: column;
+  }
+
+  .container.categories-container {
+    padding: 0px 15px;
+    max-width: 540px;
+  }
+
+  .categories-item__image-wrap {
+    min-width: 100%;
+  }
+}
+
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
