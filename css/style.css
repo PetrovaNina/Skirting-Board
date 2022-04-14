@@ -992,15 +992,13 @@ footer.section {
 		justify-content: center;
 		align-items: center;
 		gap: 0;
-		padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 	}
 
-	.footer-logo {
-		display: none;
-	}
-
+	.footer-logo,
 	.footer__heading {
-		text-align: center;
+		display: none;
 	}
 
 	.footer-social-list {
