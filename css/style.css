@@ -212,6 +212,10 @@ header {
 	position: relative;
 	text-transform: capitalize;
 	line-height: 2.3;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .dropdown-link:hover,
@@ -393,7 +397,7 @@ header {
 .categories-list,
 .projects-list {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 30px;
 }
 
@@ -431,6 +435,9 @@ a {
 	font-size: 18px;
 	letter-spacing: .025em;
 	transition: all .3s ease-in-out;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .categories__item-arrow {
@@ -444,8 +451,7 @@ a {
 }
 
 
-.categories__item:first-child .categories__item-arrow,
-.categories__item:last-child .categories__item-arrow {
+.categories__item:first-child .categories__item-arrow {
 	width: 88px;
 	margin-left: 20px;
 }
@@ -915,6 +921,9 @@ footer.section {
 
 	.categories__item:last-child {
 		grid-column: 1 / 3;
+		/* width: 88px; */
+		/* margin-left: 20px; */
+
 	}
 
 }
@@ -992,8 +1001,8 @@ footer.section {
 		justify-content: center;
 		align-items: center;
 		gap: 0;
-    padding-top: 25px;
-    padding-bottom: 10px;
+		padding-top: 25px;
+		padding-bottom: 10px;
 	}
 
 	.footer-logo,
