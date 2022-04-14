@@ -106,6 +106,8 @@ ol,
 ul,
 li {
   list-style: none;
+  line-height: 0;
+  display: inline-block;
 }
 
 

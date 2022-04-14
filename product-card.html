@@ -32,7 +32,7 @@
           <li class="navbar-list__item">
             <a class="nav-link" href="index.html">Главная</a>
           </li>
-          <li class="navbar-list__item active"><a class="nav-link">Каталог</a>
+          <li class="navbar-list__item"><a class="nav-link" href="categories.html">Каталог</a>
             <ul class="navbar-dropdown">
               <li class="dropdown__item"><a class="dropdown-link">Теневой профиль</a></li>
               <li class="dropdown__item"><a class="dropdown-link">Парящий профиль</a></li>
@@ -67,51 +67,31 @@
     </div>
   </header>
   <main>
-    <div class="container categories-container">
-      <div class="divider"></div>
-      <article class="categories-item">
-        <div class="categories-item__image-wrap">
-          <img class="categories-item__image" src="images/categories/skriti.jpeg" alt="" width="500" height="400" />
-        </div>
-        <div class="categories-item__caption">
-          <a href="">
-            <h2 class="categories-item__title">Название Категории</h2>
-          </a>
-          <p class="categories-item__description">
-            Давно выяснено, что при оценке дизайна и композиции читаемый текст
-            мешает сосредоточиться. Ipsum используют
-            потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также
-            реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
-            текст.. Здесь ваш текст.. Здесь ваш текст.."
-          </p>
-          <div class="price">800<span>₽</span></div>
-          <div class="categories-item__buttons">
-            <button class="categories-item__calculator button button--colored">рассчитать стоимость</button>
-            <a class="button categories-item__link button button--default" href="product-card.html">Подробнее</a>
+    <section class="section section-sm section-first bg-default">
+      <div class="container">
+        <!-- Related Products-->
+        <section id="relared-products" class="section section-sm section-last bg-default">
+          <div class="container">
+            <h4>С этим товаром покупают</h4>
+            <ul>
+              <li>
+                <article class="relared-product">
+                  <figure class="item">
+                    <img class="relared-product__image" src="images/categories/paryaschii.jpeg" alt="" width="270"
+                      height="280">
+                    <div class="dark-on-hover">
+                      <a class="button button--white" href="">подробнее</a>
+                    </div>
+                  </figure>
+                  <h5 class="relared-product__title"><a href="">Название товара</a></h5>
+                  <div class="relared-product__price price">235<span>₽</span></div>
+                </article>
+              </li>
+            </ul>
           </div>
-        </div>
-      </article>
-      <div class="divider"></div>
-      <article class="categories-item">
-        <div class="categories-item__image-wrap">
-          <img class="categories-item__image" src="images/categories/skriti.jpeg" alt="" width="500" height="400" />
-        </div>
-        <div class="categories-item__caption">
-          <a href="">
-            <h2 class="categories-item__title">Название Категории</h2>
-          </a>
-          <p class="categories-item__description">
-            Pеальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш
-            текст.. Здесь ваш текст.. Здесь ваш текст.."
-          </p>
-          <div class="price">800<span>₽</span></div>
-          <div class="categories-item__buttons">
-            <button class="categories-item__calculator button button--colored">рассчитать стоимость</button>
-            <a class="button categories-item__link button button--default" href="product-card.html">Подробнее</a>
-          </div>
-        </div>
-      </article>
-    </div>
+        </section>
+      </div>
+    </section>
   </main>
   <footer class="section">
     <div class="container footer-container">
