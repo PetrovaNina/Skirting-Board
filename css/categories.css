@@ -35,12 +35,6 @@
 }
 
 
-.categories-item__buttons {
-  display: flex;
-  gap: 30px;
-}
-
-
 @media (min-width: 900px) {
   .categories-item__image-wrap {
     flex: 1 0 40%;

@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <title>Категории товаров</title>
+  <title>Карточка товара</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
   <meta charset="utf-8">
@@ -32,7 +32,7 @@
           <li class="navbar-list__item">
             <a class="nav-link" href="index.html">Главная</a>
           </li>
-          <li class="navbar-list__item"><a class="nav-link" href="categories.html">Каталог</a>
+          <li class="navbar-list__item active"><a class="nav-link" href="categories.html">Каталог</a>
             <ul class="navbar-dropdown">
               <li class="dropdown__item"><a class="dropdown-link">Теневой профиль</a></li>
               <li class="dropdown__item"><a class="dropdown-link">Парящий профиль</a></li>
@@ -68,8 +68,56 @@
   </header>
   <main>
     <div class="product-page">
-      <section class="section section-sm section-first bg-default">
+      <section class="section section--first">
         <div class="container">
+          <article class="product__item">
+            <div class="product__item__section product__slider">
+            </div>
+            <div class="product__item__section product__info">
+              <h2 class="product__info__header">Название товара</h2>
+              <div class="product__info__price price">200<span>₽</span></div>
+              <div class="about-content">
+                <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+                  например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь.</p>
+                <div class="divider divider-15"></div>
+                <ul class="specification__list">
+                  <li class="specification__item">
+                    <strong class="specification__property">Материал:</strong>
+                    <span class="specification__value">Алюминий;</span>
+                  </li>
+                  <li class="specification__item">
+                    <strong class="specification__property">Вес:</strong>
+                    <span class="specification__value">15 кг;</span>
+                  </li>
+                  <li class="specification__item">
+                    <strong class="specification__property">Размер:</strong>
+                    <span class="specification__value">2000 х 45 х 45 мм;</span>
+                  </li>
+                  <li class="specification__item">
+                    <a class="specification__link" href="#specification">смотреть все</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-item__buttons buttons__group">
+                <button class="categories-item__buy button button--colored">Купить</button>
+                <button class="categories-item__ask-to-count button button--default">Заказать расчет</button>
+              </div>
+              <div class="divider divider-15"></div>
+              <div class="social">
+                <h5 class="social__heading">Напишите эксперту</h5>
+                <ul class="social__list">
+                  <li>
+                    <a class="social__link social__link--white-bg" href="#"><img class="social__icon social__icon--white-bg" src="images/icons/whatsapp.svg"
+                        alt="whatsapp"></a>
+                  </li>
+                  <li>
+                    <a class="social__link social__link--white-bg" href="#"><img class="social__icon social__icon--white-bg" src="images/icons/telegram.svg"
+                        alt="telegram"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
       <section class="section" id="about-product">
@@ -90,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="about-product">
+      <section class="section" id="specification">
         <div class="container">
           <div class="section-title">
             <h6 class="section-title-content">Характеристики</h6>
@@ -191,13 +239,13 @@
       </section>
     </div>
   </main>
-  <footer class="section">
+  <footer>
     <div class="container footer-container">
       <div class="footer-logo">
         <a><img src="images/icons/logo-inverse-2-149x46.png" alt="" width="149" height="46" /></a>
       </div>
       <div class="footer-contacts">
-        <h5 class="footer__heading">контакты</h5>
+        <h5 class="footer__heading social__heading">контакты</h5>
         <ul>
           <li class="footer-contacts__item">
             <i class="icon fi fi-rs-phone-call"></i>
@@ -213,19 +261,18 @@
           </li>
         </ul>
       </div>
-      <div class="footer-social">
-        <h5 class="footer__heading">напишите нам</h5>
-        <ul class="footer-social-list">
+      <div class="social">
+        <h5 class="footer__heading social__heading">напишите нам</h5>
+        <ul class="social__list">
           <li>
-            <a class="footer-social-link" href="#"><img class="footer-social-icon" src="images/icons/viber.svg"
-                alt="viber"></a>
+            <a class="social__link" href="#"><img class="social__icon" src="images/icons/viber.svg" alt="viber"></a>
           </li>
           <li>
-            <a class="footer-social-link" href="#"><img class="footer-social-icon" src="images/icons/whatsapp.svg"
+            <a class="social__link" href="#"><img class="social__icon" src="images/icons/whatsapp.svg"
                 alt="whatsapp"></a>
           </li>
           <li>
-            <a class="footer-social-link" href="#"><img class="footer-social-icon" src="images/icons/telegram.svg"
+            <a class="social__link" href="#"><img class="social__icon" src="images/icons/telegram.svg"
                 alt="telegram"></a>
           </li>
         </ul>

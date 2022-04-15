@@ -15,7 +15,6 @@ body {
 
 main {
 	flex-grow: 2;
-	margin-top: 72px;
 }
 
 h1,
@@ -51,6 +50,11 @@ a {
 	color: inherit;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+}
+
+.buttons__group {
+	display: flex;
+	gap: 30px;
 }
 
 .button {
@@ -90,6 +94,7 @@ a {
 /* default button stecific styles */
 .button--default {
 	border-color: #151515;
+	background-color: transparent;
 }
 
 .button--default:hover,
@@ -145,6 +150,14 @@ a {
 	background: #e1e1e1;
 }
 
+.divider-30 {
+	margin: 30px 0;
+}
+
+.divider-15 {
+	margin: 15px 0;
+}
+
 .price {
 	margin-bottom: 10px;
 	font-size: 24px;
@@ -185,6 +198,7 @@ header {
 	right: 0;
 	background: #ffffff;
 	z-index: 2;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.10);
 }
 
 .header-wrap {
@@ -303,6 +317,19 @@ header {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.section {
+	padding-top: 72px;
+	margin-bottom: -72px;
+}
+
+.section:last-child {
+	margin-bottom: 0;
+}
+
+.section--first {
+	padding-top: 132px;
 }
 
 .section-title {
@@ -744,7 +771,7 @@ a {
 }
 
 /* Footer */
-footer.section {
+footer {
 	width: 100%;
 	padding-bottom: 0;
 	color: rgba(255, 255, 255, 0.5);
@@ -783,40 +810,60 @@ footer.section {
 	max-width: 350px;
 }
 
-.footer-social .footer__heading {
+.footer__heading.social__heading {
 	text-align: center;
 }
 
-.footer-social-list {
+.social__list {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	gap: 15px;
 }
 
-.footer-social-icon {
-	width: 35px;
-	height: 35px;
-	outline: 2px solid #272727;
-	outline-offset: -1px;
+.social__link {
+	display: block;
+	line-height: 0;
 	background-color: rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 }
 
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:active .footer-social-icon,
-.footer-social-link:focus .footer-social-icon {
+.social__link--white-bg {
+	background-color: #272727;
+}
+
+.social__link:active,
+.social__link:hover,
+.social__link:focus {
 	background-color: #efc4a3;
+}
+
+.social__link--white-bg:active,
+.social__link--white-bg:hover,
+.social__link--white-bg:focus {
+	background-color: #976f55;
+}
+
+.social__icon {
+	width: 35px;
+	height: 35px;
+	outline: 2px solid #272727;
+	outline-offset: -1px;
+	border-radius: 50%;
+}
+
+.social__icon--white-bg {
+	filter: invert(1) brightness(2);
+}
+
+.social__icon--white-bg[alt="telegram"] {
+	transform: scale(1.2);
+}
+
+:hover>.social__icon:not(.social__icon--white-bg),
+:active>.social__icon:not(.social__icon--white-bg),
+:focus>.social__icon:not(.social__icon--white-bg) {
 	filter: contrast(0.9);
-}
-
-.footer-social-link {
-	display: block;
-	line-height: 0;
-}
-
-.footer-social-link:focus {
-	outline: none;
 }
 
 .footer-rights {
@@ -832,13 +879,16 @@ footer.section {
 	}
 }
 
-@media (min-width: 1200px) {
-	main {
-		margin-top: 90px;
-	}
+@media (min-width: 1201px) {
 
 	.section {
+		padding-top: 90px;
 		padding-bottom: 60px;
+		margin-bottom: -90px;
+	}
+
+	.section--first {
+		padding-top: 150px;
 	}
 
 	/* #slider, */
@@ -875,7 +925,7 @@ footer.section {
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
 	.section {
 		padding-bottom: 40px;
 	}
@@ -1039,7 +1089,7 @@ footer.section {
 		display: none;
 	}
 
-	.footer-social-list {
+	.social__list {
 		justify-content: center;
 	}
 }
