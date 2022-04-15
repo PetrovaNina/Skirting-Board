@@ -2,6 +2,24 @@
   padding: 0;
 }
 
+.product-page .section-title {
+  margin-top: 20px;
+}
+
+.specification__list {
+  display: contents;
+  padding: 20px;
+}
+
+.specification__item {
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.specification__property {
+  font-weight: bolder;
+}
+
 .relared-products__heading {
   padding: 40px 0;
   font-size: 28px;
