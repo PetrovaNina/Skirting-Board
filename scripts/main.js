@@ -25,6 +25,7 @@ $("#slider").slick({
     },
   ],
 });
+const isTablet = $(document).width() < 992 && $(document).width() > 768;
 
 // Galery view slider
 $(".slider-for").slick({
@@ -41,4 +42,24 @@ $(".slider-nav").slick({
   asNavFor: ".slider-for",
   centerMode: false,
   focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        vertical: false,
+      },
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        vertical: true,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        vertical: false,
+      },
+    },
+  ],
 });

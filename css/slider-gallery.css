@@ -1,0 +1,70 @@
+.gallery-slider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-slider .slick-track {
+  height: 100%;
+}
+
+.gallery-slider .slider-for,
+.gallery-slider .slider-nav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-slider .slider-for {
+  padding-top: 100%;
+}
+
+.gallery-slider .slider-nav {
+  padding-top: 30%;
+  order: 1;
+}
+
+.gallery-slider .slider-for .slick-list,
+.gallery-slider .slider-nav .slick-list {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.gallery-slider .slider__image--big,
+.gallery-slider .slider__image--small {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-slider .slider-nav .slick-slide {
+  margin: 0 7.5px;
+}
+
+.gallery-slider .slider-nav .slick-list {
+  margin: 0 -7.5px;
+}
+
+.gallery-slider .slick-vertical .slick-slide {
+  margin: 7.5px 0;
+}
+
+.gallery-slider .slick-vertical .slick-list {
+  margin: -7.5px 0;
+}
+
+.gallery-slider .slick-vertical.slider-nav {
+  width: 23.1%;
+  padding-top: 74%;
+}
+
+.gallery-slider .slick-vertical.slider-nav+.slider-for {
+  width: 74%;
+  padding-top: 74%;
+}
