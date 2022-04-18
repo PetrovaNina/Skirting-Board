@@ -1100,10 +1100,7 @@ footer {
 	}
 }
 
-
-
-
-.shrink-image-wrap {
+.scalable-image-wrap {
 	width: 100%;
 	overflow: hidden;
 }
@@ -1117,4 +1114,16 @@ footer {
 
 .shrink-container:hover .shrink-image {
 	transform: scale(1);
+}
+
+.grow-image {
+	width: 100%;
+	object-fit: cover;
+	padding: 10px;
+	transform: scale(1);
+	transition: all .3s ease;
+}
+
+.grow-container:hover .grow-image {
+	transform: scale(1.1);
 }
