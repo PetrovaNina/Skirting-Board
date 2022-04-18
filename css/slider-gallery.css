@@ -12,6 +12,10 @@
   display: block;
 }
 
+.gallery-slider .slider-for .slick-track {
+  width: 100% !important;
+}
+
 .gallery-slider .slider-for,
 .gallery-slider .slider-nav {
   position: relative;
@@ -45,6 +49,10 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.gallery-slider .slider__image--big {
+  width: 100% !important;
 }
 
 .gallery-slider .slider-nav .slick-slide {
