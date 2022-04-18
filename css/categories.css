@@ -137,7 +137,7 @@
   .twin:last-of-type {
     grid-column: 1/2;
   }
-  
+
   .twin {
     grid-row: inherit;
   }
@@ -167,6 +167,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .grid-item {
+    position: relative;
+    font-size: 0.9em;
+  }
+}
 
 /*
 320px — 480px: Mobile devices
