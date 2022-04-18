@@ -168,11 +168,23 @@
 }
 
 @media (max-width: 480px) {
-  .grid-item {
-    position: relative;
+  .grid-block .grid-description {
     font-size: 0.9em;
   }
 }
+
+@media (max-width: 420px) {
+  .grid-block .grid-description {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 325px) {
+  .grid-block .grid-description {
+    font-size: 0.7em;
+  }
+}
+
 
 /*
 320px — 480px: Mobile devices
