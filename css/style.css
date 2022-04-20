@@ -1040,6 +1040,7 @@ footer {
 		top: 0;
 		bottom: 0;
 		width: 270px;
+		min-height: 100vh;
 		padding: 56px 0 81px;
 		overflow-y: auto;
 		overflow-x: hidden;
