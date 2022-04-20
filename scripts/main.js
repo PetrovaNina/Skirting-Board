@@ -63,3 +63,33 @@ $(".slider-nav").slick({
     },
   ],
 });
+
+// NAVIGATION BAR CONDITIONS
+
+const burger = $(".hamburger");
+const navbar = $(".header-navbar");
+const navbarToggler = $(".navbar-toggler");
+
+function toggleBurgerMenu() {
+  burger.toggleClass("active");
+  navbar.toggleClass("active");
+}
+
+// Manipulate navbar on mobile
+burger.on("click", toggleBurgerMenu);
+
+// Hide navbar and close burger when clicked outside the navbar
+$(document).on("click", (event) => {
+  if (
+    navbar.hasClass("active") &&
+    $(event.target).closest(navbar).length == 0 &&
+    $(event.target).closest(burger).length == 0
+  ) {
+    toggleBurgerMenu();
+  }
+});
+
+// Uncheck other togglers when one of them is clicked
+navbarToggler.on("change", function () {
+  navbarToggler.not(this).prop("checked", false);
+});

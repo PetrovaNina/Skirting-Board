@@ -25,15 +25,21 @@
 <body>
   <header class="page-header">
     <div class="header-wrap">
-      <div class="header-logo">
-        <a><img src="images/icons/logo-default-149x46.png" alt="" width="149" height="46" /></a>
+      <div class="header-pannel">
+        <div class="header-logo">
+          <a class="header-logo__link" href="index.html"><img src="images/icons/logo-default-149x46.png" alt=""
+              width="149" height="46" /></a>
+        </div>
+        <div class="hamburger"><span></span></div>
       </div>
       <nav class="header-navbar">
         <ul class="navbar-list">
           <li class="navbar-list__item">
             <a class="nav-link" href="index.html">Главная</a>
           </li>
-          <li class="navbar-list__item active"><a class="nav-link" href="categories.html">Каталог</a>
+          <li class="navbar-list__item active">
+            <input type="checkbox" name="navbar-toggler" class="navbar-toggler"></input>
+            <a class="nav-link open" href="categories.html">Каталог</a>
             <ul class="navbar-dropdown">
               <li class="dropdown__item"><a class="dropdown-link">Теневой профиль</a></li>
               <li class="dropdown__item"><a class="dropdown-link">Парящий профиль</a></li>
@@ -44,7 +50,9 @@
               <li class="dropdown__item"><a class="dropdown-link">Декоративная перегородка</a></li>
             </ul>
           </li>
-          <li class="navbar-list__item"><a class="nav-link">Информация</a>
+          <li class="navbar-list__item">
+            <input type="checkbox" name="navbar-toggler" class="navbar-toggler"></input>
+            <a class="nav-link">Информация</a>
             <ul class="navbar-dropdown">
               <li class="dropdown__item"><a class="dropdown-link">монтаж</a></li>
               <li class="dropdown__item"><a class="dropdown-link">доставка</a>
@@ -53,7 +61,9 @@
               <li class="dropdown__item"><a class="dropdown-link">гарантия</a></li>
             </ul>
           </li>
-          <li class="navbar-list__item"><a class="nav-link">О компании</a>
+          <li class="navbar-list__item">
+            <input type="checkbox" name="navbar-toggler" class="navbar-toggler"></input>
+            <a class="nav-link">О компании</a>
             <ul class="navbar-dropdown">
               <li class="dropdown__item"><a class="dropdown-link">сертификаты</a></li>
               <li class="dropdown__item"><a class="dropdown-link">реквизиты</a></li>
@@ -64,7 +74,6 @@
         </ul>
       </nav>
       <div class="header-phone">8 800 000 00 00</div>
-      <div class="hamburger"><span></span></div>
     </div>
   </header>
   <main>
