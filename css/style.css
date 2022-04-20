@@ -1038,7 +1038,7 @@ footer {
 		position: fixed;
 		left: 0;
 		top: 0;
-		bottom: 0;
+		bottom: -100px;
 		width: 270px;
 		min-height: 100vh;
 		padding: 56px 0 81px;
@@ -1112,8 +1112,6 @@ footer {
 		position: absolute;
 		top: 50%;
 		right: 50%;
-		/* bottom: 0;
-		left: 0; */
 		font-size: 20px;
 		transform: translate(50%, -50%) rotate(-90deg);
 		transition: inherit;
