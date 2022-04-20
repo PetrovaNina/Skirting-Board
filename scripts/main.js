@@ -93,3 +93,16 @@ $(document).on("click", (event) => {
 navbarToggler.on("change", function () {
   navbarToggler.not(this).prop("checked", false);
 });
+
+/**
+ * Initialize the gallery
+**/
+
+$(function () {
+  $(".projects-list").lightGallery({
+    selector: ".fi-rs-search",
+    mode: "lg-slide",
+		thumbnail: true,
+    exThumbImage: "data-src",
+  });
+})
