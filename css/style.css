@@ -417,7 +417,7 @@ header {
 }
 
 .slider__item.slick-active .slider__item__button {
-	animation-name: slideInLeft;
+	animation-name: slideInUp;
 }
 
 .slider__item__caption {
