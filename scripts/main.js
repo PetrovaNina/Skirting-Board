@@ -12,7 +12,7 @@ $("#slider").slick({
   speed: 300,
   cssEase: "linear",
   prevArrow:
-    '<button class="slider__arrow-button slider__arrow-button--prev"></button>',
+    '<button class="slider__arrow-button slider__arrow-button__prev"></button>',
   nextArrow:
     '<button class="slider__arrow-button slider__arrow-button__next"></button>',
   responsive: [
