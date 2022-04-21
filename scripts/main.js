@@ -96,13 +96,14 @@ navbarToggler.on("change", function () {
 
 /**
  * Initialize the gallery
-**/
+ **/
 
 $(function () {
-  $(".projects-list").lightGallery({
-    selector: ".fi-rs-search",
-    mode: "lg-slide",
-		thumbnail: true,
-    exThumbImage: "data-src",
-  });
-})
+  $(".projects-list").length &&
+    $(".projects-list").lightGallery({
+      selector: ".fi-rs-search",
+      mode: "lg-slide",
+      thumbnail: true,
+      exThumbImage: "data-src",
+    });
+});
