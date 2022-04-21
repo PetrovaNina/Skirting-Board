@@ -338,10 +338,6 @@ header {
 	margin-bottom: 0;
 }
 
-.section--first {
-	padding-top: 132px;
-}
-
 .section-title {
 	position: relative;
 	overflow: hidden;
@@ -551,6 +547,7 @@ header {
 /* Categories__item */
 .categories__item {
 	line-height: 0;
+	max-width: calc(100vw - 30px);
 	position: relative;
 }
 
@@ -562,6 +559,11 @@ header {
 .categories__item-wrap,
 a {
 	text-decoration: none;
+}
+
+.categories__item-photo,
+.project__item {
+	max-height: calc(100vw - 30px);
 }
 
 .categories__item-caption {
@@ -865,6 +867,7 @@ footer {
 	display: flex;
 	gap: 20px;
 	align-items: center;
+	line-height: 1.5em;
 }
 
 .footer-contacts__item .icon {
@@ -941,6 +944,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.section--first {
+		padding-top: 100px;
+	}
+
 	.slider__item__title {
 		font-size: 45px;
 	}
@@ -955,7 +962,7 @@ footer {
 	}
 
 	.section--first {
-		padding-top: 150px;
+		padding-top: 120px;
 	}
 
 	/* #slider, */

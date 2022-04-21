@@ -103,8 +103,7 @@ section {
 }
 
 ol,
-ul,
-li {
+ul {
   list-style: none;
   line-height: 0;
 }
