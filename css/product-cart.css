@@ -99,6 +99,7 @@
 
 .related-product {
   text-align: center;
+  width: min-content;
 }
 
 .related-product__image-wrap {
@@ -142,7 +143,7 @@
 }
 
 .related-product__title {
-  padding-top: 15px;
+  padding: 15px 15px 0;
   font-weight: 400;
   font-size: 18px;
 }
