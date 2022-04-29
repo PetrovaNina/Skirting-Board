@@ -101,7 +101,7 @@ navbarToggler.on("change", function () {
 $(function () {
   $(".projects-list").length &&
     $(".projects-list").lightGallery({
-      selector: ".fi-rs-search",
+      selector: ".project__item",
       mode: "lg-slide",
       thumbnail: true,
       exThumbImage: "data-src",
