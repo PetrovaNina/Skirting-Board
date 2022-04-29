@@ -810,7 +810,11 @@ a {
 	font-size: 25px;
 	color: #ffffff;
 	transform: translateY(15px);
-	transition: transform .3s ease;
+	transition: all .3s ease;
+}
+
+.project-title:hover {
+	color: #efc4a3;
 }
 
 .project__item:hover .icon,
