@@ -112,8 +112,12 @@
 
 .related-product__image {
   margin: 35px;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  width: -moz-available;          /* WebKit игнор. */
+  width: -webkit-fill-available;  /* Mozilla игнор. */
+  width: fill-available;
+  height: -moz-available;          /* WebKit игнор. */
+  height: -webkit-fill-available;  /* Mozilla игнор. */
+  height: fill-available;
   transform: scale(1);
   transition: transform .25s ease;
 }
